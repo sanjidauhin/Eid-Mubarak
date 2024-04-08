@@ -62,7 +62,7 @@
             animation: eidMubarak 2s infinite;
         }
 
-        @keyframes eidMubarak {
+        @keyframes ঈদ মোবারক {
             0% {
                 transform: rotate(0deg);
             }
@@ -95,7 +95,7 @@
 <body>
     <div class="container">
         <h2>সানজিদ আহমেদ অহিনের সাথে আপনার সম্পর্ক নির্বাচন করুন</h2>
-        <div class="eid-mubarak" style="font-size: 24px;">Eid Mubarak!</div>
+        <div class="ঈদ মোবারক" style="font-size: 24px;">ঈদ মোবারক!</div>
         <form id="relationshipForm" action="javascript:void(0);" onsubmit="redirect()">
             <label for="relationship">Select Relationship:</label>
             <select id="relationship" name="relationship">
@@ -107,6 +107,7 @@
                 <option value="junior">জুনিয়র</option>
                 <option value="ashique">আশিক</option>
                 <option value="anika">আনিকা বলদ</option>
+                <option value="friend">বন্ধু</option>
             </select>
             <br>
             <button type="submit">Submit</button>
@@ -125,6 +126,7 @@
                 case 'junior':
                 case 'ashique':
                 case 'anika':
+                case 'friend':    
                     window.location.href = relationship + ".html";
                     break;
                 default:
