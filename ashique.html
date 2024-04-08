@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Ashique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #FF00FF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .eid-mubarak {
+            font-size: 24px;
+            animation: eidMubarak 2s infinite;
+        }
+
+        @keyframes eidMubarak {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(5deg);
+            }
+            50% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>ঈদ মোবারক আশিক</h2>
+        <p>ভালো হয়ে যাও আশিক। ধর্মের পথে আসো।</p>
+        <p>আর হ্যাঁ Web Development Class এ সাহায্য করার জন্য ধন্যবাদ।</p>
+        <div class="eid-mubarak">Eid Mubarak!</div>
+    </div>
+</body>
+</html>
