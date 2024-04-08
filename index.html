@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relationship Form</title>
+    <title>Eid Mubarak</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +58,28 @@
             background-color: #45a049;
         }
 
+        .eid-mubarak {
+            animation: eidMubarak 2s infinite;
+        }
+
+        @keyframes eidMubarak {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(5deg);
+            }
+            50% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -72,18 +94,19 @@
 </head>
 <body>
     <div class="container">
-        <h2>What is your relationship with Sanjid Auhi?</h2>
+        <h2>সানজিদ আহমেদ অহিনের সাথে আপনার সম্পর্ক নির্বাচন করুন</h2>
+        <div class="eid-mubarak" style="font-size: 24px;">Eid Mubarak!</div>
         <form id="relationshipForm" action="javascript:void(0);" onsubmit="redirect()">
             <label for="relationship">Select Relationship:</label>
             <select id="relationship" name="relationship">
-                <option value="father">Father</option>
-                <option value="mother">Mother</option>
-                <option value="uncle">Uncle</option>
-                <option value="aunt">Aunt</option>
-                <option value="senior">Senior</option>
-                <option value="junior">Junior</option>
-                <option value="ashique">Ashique</option>
-                <option value="anika">Anika</option>
+                <option value="father">বাবা</option>
+                <option value="mother">মা</option>
+                <option value="uncle">আঙ্কেল</option>
+                <option value="aunt">আন্টি</option>
+                <option value="senior">সিনিয়র ভাই</option>
+                <option value="junior">জুনিয়র</option>
+                <option value="ashique">আশিক</option>
+                <option value="anika">আনিকা বলদ</option>
             </select>
             <br>
             <button type="submit">Submit</button>
@@ -111,4 +134,3 @@
     </script>
 </body>
 </html>
-
