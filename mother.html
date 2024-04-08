@@ -35,6 +35,29 @@
             margin-bottom: 30px;
         }
 
+        .eid-mubarak {
+            font-size: 24px;
+            animation: eidMubarak 2s infinite;
+        }
+
+        @keyframes eidMubarak {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(5deg);
+            }
+            50% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -50,7 +73,8 @@
 <body>
     <div class="container">
         <h2>ঈদ মোবারক আম্মু</h2>
-        <p>সালামি দিও মনে করে। আর চা বানিয়ে দেও</p>
+        <p>মনে করে সালামি দিও। আর চা বানাই দেও।</p>
+        <div class="eid-mubarak">Eid Mubarak!</div>
     </div>
 </body>
 </html>
