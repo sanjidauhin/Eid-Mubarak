@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Relationship Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,21 +19,20 @@
         .container {
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
             text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
         }
 
         h2 {
-            margin-top: 0;
             color: #333;
+            margin-bottom: 20px;
         }
 
-        label {
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: block;
+        p {
+            color: #666;
+            margin-bottom: 30px;
         }
 
         select {
@@ -58,12 +57,23 @@
         button:hover {
             background-color: #45a049;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>What is your relationship with Sanjid Auhin?</h2>
-        <form id="relationshipForm" action="redirect.php" method="POST">
+        <h2>What is your relationship with Sanjid Auhi?</h2>
+        <form id="relationshipForm" action="javascript:void(0);" onsubmit="redirect()">
             <label for="relationship">Select Relationship:</label>
             <select id="relationship" name="relationship">
                 <option value="father">Father</option>
@@ -79,5 +89,26 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <script>
+        function redirect() {
+            var relationship = document.getElementById('relationship').value;
+            switch (relationship) {
+                case 'father':
+                case 'mother':
+                case 'uncle':
+                case 'aunt':
+                case 'senior':
+                case 'junior':
+                case 'ashique':
+                case 'anika':
+                    window.location.href = relationship + ".html";
+                    break;
+                default:
+                    alert("Invalid selection");
+            }
+        }
+    </script>
 </body>
 </html>
+
