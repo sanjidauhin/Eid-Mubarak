@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আব্বু</title>
+    <title>Welcome Father</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,22 +17,45 @@
         }
 
         .container {
-            background-color: #fff;
+            background-color: #4CAF50;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 40px;
             text-align: center;
             animation: fadeIn 0.5s ease-in-out;
         }
 
         h2 {
-            color: #333;
+            color: #fff;
             margin-bottom: 20px;
         }
 
         p {
-            color: #666;
+            color: #fff;
             margin-bottom: 30px;
+        }
+
+        .eid-mubarak {
+            font-size: 24px;
+            animation: eidMubarak 2s infinite;
+        }
+
+        @keyframes eidMubarak {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(5deg);
+            }
+            50% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
         }
 
         @keyframes fadeIn {
@@ -50,7 +73,9 @@
 <body>
     <div class="container">
         <h2>ঈদ মোবারক আব্বু</h2>
-        <p>সালামি কিন্তু মনে করে দিয়ে দিও।</p>
+        <p>ঈদের সালামি দিতে ভুলে যেও না।</p>
+        <div class="eid-mubarak">Eid Mubarak!</div>
     </div>
 </body>
 </html>
+
