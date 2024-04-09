@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Cousin</title>
+    <title>Welcome cousin</title>
     <style>
+        /* Styles for the page layout */
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
@@ -17,7 +18,7 @@
         }
 
         .container {
-            background-color: #808080;
+            background-color: #3498db;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 40px;
@@ -35,6 +36,22 @@
             margin-bottom: 30px;
         }
 
+        /* Styles for image placeholders */
+        .image-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-placeholder img {
+            width: 150px; /* Keep image width */
+            height: 150px; /* Keep image height */
+            border-radius: 6px;
+            margin: 0 10px;
+        }
+
+        /* Animation for Eid Mubarak message */
         .eid-mubarak {
             font-size: 24px;
             animation: eidMubarak 2s infinite;
@@ -58,6 +75,7 @@
             }
         }
 
+        /* Animation for page fade-in */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -72,8 +90,15 @@
 </head>
 <body>
     <div class="container">
-        <h2>ঈদ মোবারক ভাইয়া/আপু</h2>
-        <p>যদি আপনি সিনিয়র হন সেক্ষেত্রে 1975063734 বিকাশ নাম্বারে সালামি দিয়ে আপনার এই ছোট ভাইকে বাধিত করিবেন। আর জুনিয়র হলে বলতে চাই দোয়াই হচ্ছে সবচেয়ে বড় সালামি। আমার দোয়া সবসময়ই রইবে</p>
+        <h2>ঈদ মোবারক ভাইয়া/আপু!</h2>
+        <div class="image-placeholder">
+            <img src="https://github.com/sanjidauhin/Eid-Mubarak/assets/163626650/068a82cd-f4ae-4082-8970-e0466bcf9d69" alt="Uncle Image 1">
+            <img src="https://github.com/sanjidauhin/Eid-Mubarak/assets/163626650/81263064-b0e1-4160-8f66-a8cc7d00ecaf" alt="Uncle Image 2">
+        </div>
+        <p>ঈদের অনেক শুভেচ্ছা।
+        <br>যদি আপনি সিনিয়র হন আপনাকে ভার্চুয়ালি সালাম করা হলো।
+        <br>সালামি দিতে বিকাশ করুন 01975063734 এই নাম্বারে অথবা QR code-টি scan করুন।
+        <br>আর যদি জুনিয়র হও মনে রাখবে দোয়াই সবচেয়ে বড় সালামি। আমার দোয়া সব সময়ই থাকবে।</p>
         <div class="eid-mubarak">Eid Mubarak!</div>
     </div>
 </body>
