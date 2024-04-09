@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Uncle</title>
     <style>
+        /* Styles for the page layout */
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
@@ -35,6 +36,22 @@
             margin-bottom: 30px;
         }
 
+        /* Styles for image placeholders */
+        .image-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-placeholder img {
+            width: 100px;
+            height: 100px;
+            border-radius: 6px;
+            margin: 0 10px;
+        }
+
+        /* Animation for Eid Mubarak message */
         .eid-mubarak {
             font-size: 24px;
             animation: eidMubarak 2s infinite;
@@ -58,6 +75,7 @@
             }
         }
 
+        /* Animation for page fade-in */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -72,9 +90,16 @@
 </head>
 <body>
     <div class="container">
-        <h2>ঈদ মোবারক আঙ্কেল</h2>
+        <h2>ঈদ মোবারক আঙ্কেল!</h2>
+        <div class="image-placeholder">
+            <img src="uncle_image1.jpg" alt="Uncle Image 1">
+        </div>
         <p>আপনাকে ভার্চুয়ালি সালাম করা হলো। সালামি দিতে বিকাশ করুন 01975063734 এই নাম্বারে। সর্বোচ্চ সালামিদাতার জন্য রয়েছে বিশেষ দোয়ার ব্যবস্থা।</p>
+        <div class="image-placeholder">
+            <img src="uncle_image2.jpg" alt="Uncle Image 2">
+        </div>
         <div class="eid-mubarak">Eid Mubarak!</div>
     </div>
 </body>
 </html>
+
