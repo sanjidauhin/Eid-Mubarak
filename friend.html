@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Friend</title>
     <style>
+        /* Styles for the page layout */
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
@@ -17,7 +18,7 @@
         }
 
         .container {
-            background-color: #FF8C00;
+            background-color: #32CD32; /* Green color */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 40px;
@@ -35,18 +36,22 @@
             margin-bottom: 30px;
         }
 
+        /* Styles for image placeholder */
         .image-placeholder {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 20px;
         }
 
         .image-placeholder img {
-            max-width: 150px;
-            max-height: 150px;
-            border-radius: 50%;
+            width: 150px; /* Keep image width */
+            height: 150px; /* Keep image height */
+            border-radius: 6px;
+            margin-left: 10px;
         }
 
+        /* Animation for Eid Mubarak message */
         .eid-mubarak {
             font-size: 24px;
             animation: eidMubarak 2s infinite;
@@ -70,6 +75,7 @@
             }
         }
 
+        /* Animation for page fade-in */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -84,14 +90,14 @@
 </head>
 <body>
     <div class="container">
-        <h2>Welcome Friend</h2>
-        <p>Give me some money.</p>
+        <h2>ঈদ মোবারক বন্ধু!</h2>
+        <p>অনেক অনেক ঈদের শুভেচ্ছা রইলো। একদিন দেখা করি চল।<br>তবে বন্ধুদের থেকে সালামি নিতে আমার কোনো সমস্যা নেই।</p>
         <div class="image-placeholder">
-            <img src="https://github.com/sanjidauhin/Eid-Mubarak/assets/163626650/81263064-b0e1-4160-8f66-a8cc7d00ecaf" alt="Image 1">
-            <img src="image2.jpg" alt="Image 2">
+            <img src="friend_image.jpg" alt="Friend Image">
         </div>
         <div class="eid-mubarak">Eid Mubarak!</div>
     </div>
 </body>
 </html>
+
 
