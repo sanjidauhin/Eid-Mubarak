@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Senior</title>
+    <title>Welcome Uncle</title>
     <style>
+        /* Styles for the page layout */
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
@@ -17,7 +18,7 @@
         }
 
         .container {
-            background-color: #FFD700;
+            background-color: #3498db;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 40px;
@@ -35,6 +36,22 @@
             margin-bottom: 30px;
         }
 
+        /* Styles for image placeholders */
+        .image-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-placeholder img {
+            width: 200px; /* Increase image size */
+            height: 200px; /* Increase image size */
+            border-radius: 6px;
+            margin: 0 10px;
+        }
+
+        /* Animation for Eid Mubarak message */
         .eid-mubarak {
             font-size: 24px;
             animation: eidMubarak 2s infinite;
@@ -58,6 +75,7 @@
             }
         }
 
+        /* Animation for page fade-in */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -72,8 +90,14 @@
 </head>
 <body>
     <div class="container">
-        <h2>ঈদ মোবারক সিনিয়র ভাইয়া/আপু</h2>
-        <p>্সিনিয়র ভাইয়া/আপু। 01975063734 বিকাশ নাম্বারে সালামি দিয়ে আপনার এই ছোট ভাইকে বাধিত করিবেন। আপনার জন্য রইলো অসীম শ্রদ্ধা।</p>
+        <h2>ঈদ মোবারক সিনিয়র আপু/ভাইয়া!</h2>
+        <div class="image-placeholder">
+            <img src="https://github.com/sanjidauhin/Eid-Mubarak/assets/163626650/068a82cd-f4ae-4082-8970-e0466bcf9d69" alt="Uncle Image 1">
+        </div>
+        <p>সিনিয়র ভাইয়া/আপু। 01975063734 বিকাশ নাম্বারে সালামি দিয়ে আপনার এই ছোট ভাইকে বাধিত করিবেন। আপনার জন্য রইলো অসীম শ্রদ্ধা।</p>
+        <div class="image-placeholder">
+            <img src="https://github.com/sanjidauhin/Eid-Mubarak/assets/163626650/81263064-b0e1-4160-8f66-a8cc7d00ecaf" alt="Uncle Image 2">
+        </div>
         <div class="eid-mubarak">Eid Mubarak!</div>
     </div>
 </body>
